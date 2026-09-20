@@ -1,5 +1,6 @@
 package com.techupgrade.ai.user.controller;
 
+import com.techupgrade.ai.common.response.ApiResponse;
 import com.techupgrade.ai.user.dto.UserCreateRequest;
 import com.techupgrade.ai.user.dto.UserResponse;
 import com.techupgrade.ai.user.service.UserService;
@@ -19,13 +20,13 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<UserResponse> createUser(
+    public ResponseEntity<ApiResponse<UserResponse>> createUser(
             @Valid @RequestBody UserCreateRequest request) {
 
         UserResponse response = userService.createUser(request);
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(response);
+                .body(ApiResponse.success("User create Successfully",response));
     }
 }

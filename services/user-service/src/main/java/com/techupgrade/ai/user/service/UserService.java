@@ -1,6 +1,6 @@
 package com.techupgrade.ai.user.service;
 
-import com.techupgrade.ai.exception.EmailAlreadyExistException;
+import com.techupgrade.ai.user.exception.EmailAlreadyExistException;
 import com.techupgrade.ai.user.dto.UserCreateRequest;
 import com.techupgrade.ai.user.dto.UserResponse;
 import com.techupgrade.ai.user.entity.User;

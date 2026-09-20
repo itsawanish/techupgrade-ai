@@ -1,4 +1,4 @@
-package com.techupgrade.ai.exception;
+package com.techupgrade.ai.user.exception;
 
 public class EmailAlreadyExistException extends RuntimeException{
 

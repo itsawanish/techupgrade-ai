@@ -1,4 +1,4 @@
-package com.techupgrade.ai.exception;
+package com.techupgrade.ai.user.exception;
 
 import java.time.LocalDateTime;
 import java.util.Map;

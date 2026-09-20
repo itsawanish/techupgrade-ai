@@ -1,4 +1,4 @@
-package com.techupgrade.ai.exception;
+package com.techupgrade.ai.user.exception;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
